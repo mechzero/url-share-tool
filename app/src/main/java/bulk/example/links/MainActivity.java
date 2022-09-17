@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         beautifyButton.setOnClickListener(new View.OnClickListener() {
-// https://www.marcus.comhttps://elliot.comhttps://www.boykin.com
 
             public void onClick(View v) {
 
@@ -113,8 +112,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-
-
             }
         });
 
@@ -142,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onOptionsItemSelected(@NonNull MenuItem item){
         Intent intent = new Intent (Intent.ACTION_SEND);
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_SUBJECT,"Watch these links \n");
+        intent.putExtra(Intent.EXTRA_SUBJECT,"Watch these links! \n");
         intent.putExtra(Intent.EXTRA_TEXT, inputTextField.getText().toString());
         startActivity(Intent.createChooser(intent, "Share Via"));
 
